@@ -62,7 +62,7 @@ resource "random_password" "nc_cloudfront_origin_secret" {
 }
 
 resource "aws_iam_service_linked_role" "autoscaling" {
-    aws_service_name = "autoscaling.amazonaws.com"
+  aws_service_name = "autoscaling.amazonaws.com"
 }
 
 locals {
